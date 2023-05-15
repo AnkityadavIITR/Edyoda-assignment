@@ -45,15 +45,17 @@ const Form = () => {
                     <p>Total (Incl. of 18% GST)</p>
                     <span>₹149</span>
                 </Foot>
-
             </Subscription>
+
             <ButtonContainer>
                 <Cancel> CANCEL </Cancel>
                 <Pay>PROCEED TO PAY</Pay>
             </ButtonContainer>
+
             <Gateway>
                 <img src={'Icons/Razorpay Icon.png'} alt="" />
             </Gateway>
+
         </FormWrapper>
     )
 }
@@ -85,7 +87,8 @@ const FormWrapper = styled.div`
 const Header = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    width: 60%;
 `
 
 const Box = styled.div`

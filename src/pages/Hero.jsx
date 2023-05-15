@@ -13,7 +13,6 @@ const Hero = () => {
   )
 }
  
-
 const Heros=styled.div`
   background-color: aliceblue;
   background-image: url("/Back Ground.png");
