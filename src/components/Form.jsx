@@ -40,10 +40,10 @@ const Form = () => {
                     <span>₹18,500</span>
                 </Subscribe>
 
-                <Alert/>
+                <Alert price={price[selection]}/>
                 <Foot>
                     <p>Total (Incl. of 18% GST)</p>
-                    <span>₹149</span>
+                    <span>{price[selection]}</span>
                 </Foot>
             </Subscription>
 

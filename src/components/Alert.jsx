@@ -2,12 +2,12 @@ import React from 'react'
 import { styled } from 'styled-components'
 
 
-const Alert = () => {
+const Alert = ({price}) => {
   return (
     <Alertbox>
       <Offer>
         <p>Limited time offer</p>
-        <span>-₹18,401</span>
+        <span>-₹{18500-price}</span>
       </Offer>
       <Valid>
         <img src={'Icons/Vector (3).svg'} width="20px" alt="" />
