@@ -31,7 +31,7 @@ const Mainlockup = () => {
   )
 }
 const Content = styled.div`
-  width: 50%;
+  max-width: 50%;
   padding: 0px;
 
     h2{
@@ -44,6 +44,10 @@ const Content = styled.div`
       color: white;
       padding-bottom: 50px;
     }
+
+    @media all and (max-width:820px){
+      max-width: 80%;
+  }
     
     
 `

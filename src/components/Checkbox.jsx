@@ -45,6 +45,7 @@ const Checkbox1 = styled.div`
   padding: 20px 10px;
   border-radius: 4px;
   cursor: pointer;
+
 `;
 const Tag = styled.div`
   background-color: #47ba68;
@@ -67,7 +68,11 @@ const Box = styled.div`
   button {
     border-style: none;
     background:transparent;
-    width: 60%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
   }
   
 `;
@@ -77,8 +82,8 @@ const Input = styled.input`
   border-radius: 8px;
 `;
 const P = styled.p`
-  width: 75px;
-  height: 32px;
+  max-width: 75px;
+  max-height: 32px;
   font-size: 12px;
   font-family: "Roboto";
   font-style: normal;
@@ -88,6 +93,8 @@ const P = styled.p`
   color: #3c4852;
   position: absolute;
   right: 10px;
+
+  
 `;
 const Span1 = styled.span`
   font-weight: 600;

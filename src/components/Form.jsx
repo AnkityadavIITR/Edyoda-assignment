@@ -23,8 +23,10 @@ const Form = () => {
             <h3>Select your subcription plan</h3>
 
             {/* to create disable checkbox */}
-            <Checkbox months={12} prefer={0} price={99}/>
-            <Disabled/>
+            <Checkbox months={12} prefer={0} price={99}>
+                Hey
+                <Disabled/>
+            </Checkbox>
 
             {/* to map through active checkbox */}
 
@@ -66,8 +68,7 @@ const FormWrapper = styled.div`
     align-items: center;
     padding: 32px 24px;
     gap: 15px;
-    min-width: 30%;
-    max-width: 35%;
+    max-width: 40%;
     height: 760px;
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -79,10 +80,12 @@ const FormWrapper = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 19px;
-        align-self: stretch;
-
-        
+        align-self: stretch;  
     }
+
+    @media all and (max-width:820px){
+      max-width: 60%;
+  }
 `
 const Header = styled.div`
     display: flex;
@@ -154,19 +157,21 @@ const ButtonContainer = styled.div`
     display: flex;
     flex-direction: row;
     gap: 10px;
-    width: 105%;
+    max-width: 100%;
     margin-top: 22px;
-    margin-bottom: 20px;
+ 
+
 
 `
 const Cancel = styled.button`
     align-items: center;
     padding: 10px 42px;
     gap: 10px;
-    width: 220px;
-    height: 56px;
-    font-weight: 700;
-    font-size: 12px;
+    max-width: 50%;
+    max-height: 56px;
+
+    font-weight: 600;
+    font-size: 16px;
     line-height: 19px;
     color: #F77171;
     background-color: white;
@@ -177,11 +182,10 @@ const Pay = styled.button`
     align-items: center;
     padding: 10px 42px;
     gap: 10px;
-
-    width: 220px;
-    height: 56px;
+    max-width: 50%;
+    max-height: 56px;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 19px;
     color: white;
     background: #47BA68;
@@ -190,21 +194,18 @@ const Pay = styled.button`
 
 `
 const Gateway = styled.div`
-   position: absolute;
-   bottom: 15px;
-   left: 12px;
-
-   
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
 `
 
 const Disabled=styled.div`
-    width: 95%;
-    height: 76px;
+    width: 100%;
+    height: 100%;
     background-color:#BEBEBE;
     opacity: 0.5;
     border-radius: 4px solid grey;
-    position: absolute;
-    top: 146px;
+    z-index: 20;
 
 `
 

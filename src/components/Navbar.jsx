@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import styles from '../styles.module.css';
 import DropdownMenu from './DropdownMenu';
 import styled from 'styled-components';
-
+import Hamburger from 'hamburger-react'
 
 import Search from './Search';
+import Navigationlinks from './Navigationlinks';
 const Navbar = () => {
     const courses=[
         "Programming Language",
@@ -28,8 +29,7 @@ const Navbar = () => {
         </Navbox>
         <Navbox>
            <Search></Search>
-           <Log >Log in</Log>
-           <Sign>JOIN NOW</Sign>
+           <Navigationlinks></Navigationlinks>
         </Navbox>
 
     </Nav>
@@ -47,7 +47,10 @@ const Navwrap=styled.div`
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   background: #FFFFFF;
   
- 
+  @media all and (max-width:1000px){
+     max-height: 5rem;
+
+  }
 `
 
 const Nav=styled.div`

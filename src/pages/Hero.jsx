@@ -19,6 +19,10 @@ const Heros=styled.div`
   display: flex;
   padding: 70px 140px;
   justify-content: space-between;
+  
+  @media all and (max-width:820px){
+     display: block;
+  }
 `
 
 export default Hero
